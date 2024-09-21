@@ -16,7 +16,7 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 const directionalLight = THREE.DirectionalLight(0xffffff, 0.5);
-Light.position.set(1, 1, 1);
+directionalLight.position.set(1, 1, 1);
 scene.add(directionalLight);
 
 const renderer = new THREE.WebGLRenderer();
