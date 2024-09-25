@@ -10,7 +10,6 @@ import ReactLogo from "../../components/ReactLogo";
 import Rings from "../../components/Rings";
 import Cube from "../../components/Cube";
 import HeroCamera from "../../components/HeroCamera";
-import Button from "../../components/Button";
 const Hero = () => {
   // Use media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -58,7 +57,7 @@ const Hero = () => {
   // });
 
   return (
-    <section className="min-h-screen w-full  flex flex-col relative">
+    <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hi, I am Archan <span className="waving-hand">👋</span>
@@ -90,15 +89,15 @@ const Hero = () => {
           </Suspense>
         </Canvas>
       </div>
-      <div className="absolute bottom-10 left-0 right-0 w-full z-999 c-space">
+      {/* <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
-          <Button
+          <CustomButton
             name="Let's work together"
             isBeam
             containerClass="sm:w-fit w-full sm:min-w-96"
           />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

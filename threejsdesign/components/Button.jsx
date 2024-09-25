@@ -1,6 +1,6 @@
-const Button = ({ name, isBeam = false, containerClass }) => {
+const CustomButton = ({ name, isBeam = false, containerClass }) => {
   return (
-    <button className={`btn ${containerClass}`}>
+    <button className="bg-red-400">
       {isBeam && (
         <span className="relative flex h-3 w-3">
           <span className="btn-ping"></span>
@@ -12,4 +12,4 @@ const Button = ({ name, isBeam = false, containerClass }) => {
   );
 };
 
-export default Button;
+export default CustomButton;
